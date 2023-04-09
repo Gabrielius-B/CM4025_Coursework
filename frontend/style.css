@@ -1,0 +1,19 @@
+/* Stylesheet for quotes_and_budgets */
+
+
+body {
+    background-color: lightcoral;
+  }
+
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.mainDiv {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: small;
+    border: 5px outset black;
+    padding: 2%;
+    background-color: lightgoldenrodyellow;
+    text-align: left;
+}
