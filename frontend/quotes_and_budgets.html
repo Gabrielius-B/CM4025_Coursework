@@ -9,10 +9,16 @@
 <body>
     <h1>Quotes and Budgets for Everyone</h1>
 <!-- Cost_per_person  = Number_of_hours_needed x persons_hourly_rate-->
+<!--
+    Earnings by position:
+        Junior: £10/hour
+        Standard: £20/hour
+        Senior: £30/hour
+-->
 <div class="mainDiv">
-    <h2>Preparing quotes for you!</h2>
+    <h2>Preparing quotes for you!</h2><br>
     <form id="info">
-        <label for="hours">How many man hours do you need to work?</label>
+        <label for="hours">How many man hours are required?</label>
         <input type="text" id="hours" name="hours" class="form-control" /><br><br>
         <label for="position">What is your position?</label>
         <input type="radio" id="junior" name="position" class="form-control">
@@ -22,13 +28,15 @@
         <input type="radio" id="senior" name="position" class="form-control">
         <label for="javascript">Senior</label><br><br><br>
         <input type="button" id="submit" value="Calculate your quote!" class="btn btn-lg"><br><br>
-        
-      </form>
+        <label id="finalQuote"> Final quote: </label>
+    </form>
     <h2>How the final quote was calculated</h2>
     <p>The final quote was calculated by adding up all of
         the costs related to the project.
     </p>
 </div>
-    
+<script>
+
+</script>
 </body>
 </html>
