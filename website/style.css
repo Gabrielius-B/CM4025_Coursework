@@ -17,3 +17,8 @@ h1 {
     background-color: lightgoldenrodyellow;
     text-align: left;
 }
+
+#finalQuote {
+    font-size: x-large;
+    color: red;
+  }

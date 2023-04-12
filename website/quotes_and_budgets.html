@@ -23,16 +23,17 @@
         <input type="text" id="hours" name="hours" class="form-control" /><br><br>
         <!-- Position input-->
         <label for="position">What is your position?</label>
-        <input type="radio" id="junior" name="position" class="form-control">
+        <input type="radio" id="position" name="position" class="form-control" value="10">
         <label for="html">Junior</label>
-        <input type="radio" id="standard" name="position" class="form-control">
+        <input type="radio" id="position" name="position" class="form-control" value="20">
         <label for="css">Standard</label>
-        <input type="radio" id="senior" name="position" class="form-control">
+        <input type="radio" id="position" name="position" class="form-control" value="30">
         <label for="javascript">Senior</label><br><br><br>
         <!-- Submit-->
-        <input type="button" id="submit" value="Calculate your quote!" class="btn btn-lg"><br><br>
+        <input type="button" id="submit" value="Calculate your quote!" class="btn btn-lg" onclick="calculateQuote()"><br><br><br><br><br>
         <!-- Final quote-->
-        <label id="finalQuote">Estimated  final quote: </label>
+        <label id="quoteLabel">Estimated final quote:</label>
+        <label id="finalQuote"><i>...</i> </label>
     </form>
     <h2>How the final quote was calculated</h2>
     <p>The final quote was calculated by adding up all of
@@ -40,7 +41,21 @@
     </p>
 </div>
 <script>
-
+    // Function to calculate estimate final quote
+    function calculateQuote() {
+        // Gets hours value from user form
+        var h = document.getElementById("hours").value;
+        // Gets the integer value (Hourly pay rate) based on what position the user selected in the radio button form
+        let p = parseInt(document.querySelector('input[name="position"]:checked').value);
+        // Prints values to console
+        console.log("Estimating final quote...")
+        console.log(h)
+        console.log(p)
+        // Calculating final quote
+        finalQuote = h*p;
+        // Displaying estimate final quote on the HTML page
+        document.getElementById("finalQuote").innerHTML = "£" + finalQuote;
+    }
 </script>
 </body>
 </html>
