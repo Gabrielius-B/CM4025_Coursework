@@ -1,10 +1,10 @@
 const http = require("http");
 
-var options = {
+const options = {
     index: "quotes_and_budgets.html"
   };
 
-var dir = path.join(__dirname, '../website');
+const dir = path.join(__dirname, '../website');
 
 const host = 'localhost';
 const port = 8000;
