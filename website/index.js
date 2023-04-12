@@ -1,10 +1,6 @@
 const http = require("http");
 
-const options = {
-    index: "quotes_and_budgets.html"
-  };
-
-const dir = path.join(__dirname, '../website');
+const filePath = path.join(__dirname, 'website', req.url === '/' ? 'quotes_and_budgets.html' : req.url);
 
 const host = 'localhost';
 const port = 8000;
