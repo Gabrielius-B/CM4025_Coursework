@@ -2,5 +2,15 @@
   "dependencies": {
     "express": "^4.18.2",
     "node": "^19.8.1"
-  }
+  },
+  "name": "cm4025_coursework",
+  "description": "My coursework for CM4025 - Enterprise Web Systems module.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
