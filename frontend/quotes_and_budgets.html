@@ -11,8 +11,19 @@
 <!-- Cost_per_person  = Number_of_hours_needed x persons_hourly_rate-->
 <div class="mainDiv">
     <h2>Preparing quotes for you!</h2>
-    <p>Please enter </p>
-
+    <form id="info">
+        <label for="hours">How many man hours do you need to work?</label>
+        <input type="text" id="hours" name="hours" class="form-control" /><br><br>
+        <label for="position">What is your position?</label>
+        <input type="radio" id="junior" name="position" class="form-control">
+        <label for="html">Junior</label>
+        <input type="radio" id="standard" name="position" class="form-control">
+        <label for="css">Standard</label>
+        <input type="radio" id="senior" name="position" class="form-control">
+        <label for="javascript">Senior</label><br><br><br>
+        <input type="button" id="submit" value="Calculate your quote!" class="btn btn-lg"><br><br>
+        
+      </form>
     <h2>How the final quote was calculated</h2>
     <p>The final quote was calculated by adding up all of
         the costs related to the project.
